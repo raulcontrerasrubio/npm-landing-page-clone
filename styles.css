@@ -1,0 +1,228 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html{
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body{
+  box-sizing: border-box;
+  font-size: 1.6rem;
+}
+
+/*
+  NAVBAR
+*/
+
+.navbar{
+  background-color: #C40000;
+  color: #fff;
+}
+
+.brand{
+  float: left;
+}
+
+.navbar .brand{
+  margin-left: 1rem;
+}
+
+.brand .icon{
+  font-size: 2rem;
+  padding: 0 1rem;
+  line-height: 1.5;
+}
+
+.brand .acronym{
+  line-height: 2;
+  margin-left: 1rem;
+}
+
+.nav{
+  float: right;
+  margin-right: .5rem;
+}
+
+.nav .nav-item{
+  list-style: none;
+  float: left;
+  padding: 0 1rem;
+}
+
+.nav-link{
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  line-height: 2;
+}
+
+/*
+  HEADER
+*/
+
+#header{
+  background-color: rgb(32, 101, 136);
+  color: white;
+}
+
+.top-nav{
+  background-color: rgb(31, 82, 111);
+}
+
+.logo{
+  float: left;
+  max-height: 4rem;
+  padding: .5rem 1rem;
+}
+
+.search-box{
+  max-width: 80%;
+  float: left;
+}
+
+.search-box input[type="text"]{
+  margin-top: .5rem;
+  margin-right: 0;
+  padding: .5rem 0 .5rem 1rem;
+  background-color: rgb(31, 82, 111);
+  border: 1px solid #666;
+  color: #CCC;
+  max-width: 100%;
+}
+
+.search-box input[type="text"]::placeholder{
+  color: #CCC;
+}
+
+.search-box input[type="submit"]{
+  margin-left: 0;
+  border: 1px solid #666;
+  padding: .5rem;
+  color: #CCC;
+  background-color: rgb(31, 82, 111);
+  cursor: pointer;
+}
+
+.auth{
+  float: right;
+}
+
+.auth .actions{
+  color: #ccc;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.auth a{
+  text-decoration: none;
+  color: #ccc;
+}
+
+.auth .logo{
+  float: right;
+}
+
+.btn-header{
+  background-color: rgb(240, 146, 51);
+  color: white;
+}
+
+/*
+  COLLABORATION
+*/
+#collaboration{
+  background-color: rgb(39, 53, 71);
+  color: white;
+}
+
+.btn-collaboration{
+  background-color: rgb(203, 56, 55);
+}
+
+/*
+  WHAT IS NPM
+*/
+#whatisnpm{
+  background-image: url(images/red-car.png);
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  color: #FFF;
+}
+
+.btn-whatisnpm{
+  background-color: rgb(49, 68, 88);
+}
+
+
+/*
+  SECTION
+*/
+
+.section{
+  display: block;
+  width: 100%;
+  padding: 3rem 0;
+}
+
+.content{
+  display: block;
+  margin: 0 auto;
+  max-width: 90rem;
+}
+
+.info{
+  width: 50%;
+}
+
+.info .description{
+  margin-top: 1.5rem;
+}
+
+.info .action{
+  margin-top: 3rem;
+  float: left;
+}
+
+.section-title{
+  width: 80%;
+}
+
+.decoration-image{
+  width: 40%;
+  background-size: cover;
+}
+
+.features-list{
+  margin-top: 2rem;
+}
+
+.features-list li:not(:first-child){
+  margin-top: 1rem;
+}
+
+.btn{
+  background-color: red;
+  border-radius: 5rem;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  padding: .5rem 1rem;
+}
+
+
+/* UTILITIES */
+.clearfix{
+  clear:both;
+}
+
+.float-left{
+  float: left;
+}
+
+.float-right{
+  float:right;
+}
