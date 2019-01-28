@@ -14,6 +14,72 @@ body{
 }
 
 /*
+  SECTION
+*/
+
+.section{
+  display: block;
+  width: 100%;
+  padding: 3rem 0;
+}
+
+.content{
+  display: block;
+  margin: 0 auto;
+  max-width: 90rem;
+}
+
+.info{
+  width: 50%;
+}
+
+.info .description{
+  margin-top: 1.5rem;
+}
+
+.info .action{
+  margin-top: 3rem;
+  float: left;
+}
+
+.section-title{
+  width: 80%;
+}
+
+.decoration-image{
+  width: 40%;
+  background-size: cover;
+}
+
+.features-list{
+  margin-top: 2rem;
+}
+
+.features-list li:not(:first-child){
+  margin-top: 1rem;
+}
+
+.btn{
+  background-color: red;
+  border-radius: 5rem;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  padding: .5rem 1rem;
+}
+
+.learn-more{
+  color: #FFF;
+  display: block;
+  margin-top: 1rem;
+}
+
+.learn-more a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/*
   NAVBAR
 */
 
@@ -146,71 +212,30 @@ body{
   WHAT IS NPM
 */
 #whatisnpm{
+  /* min-height: 30rem; */
+  background: #098ace;
   background-image: url(images/red-car.png);
-  background-size: cover;
-  background-position: 0 0;
+  background-image: url(images/red-car.png), linear-gradient(to bottom, #33495f 0%, #33495f 58.5%, #098ace 58.5%, #098ace 100%);
+  background-size: contain;
+  background-position: right;
   background-repeat: no-repeat;
   color: #FFF;
 }
 
+#whatisnpm .content{
+  position: relative;
+  min-height: 30rem;
+}
+
+#whatisnpm .content > .info{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .btn-whatisnpm{
   background-color: rgb(49, 68, 88);
-}
-
-
-/*
-  SECTION
-*/
-
-.section{
-  display: block;
-  width: 100%;
-  padding: 3rem 0;
-}
-
-.content{
-  display: block;
-  margin: 0 auto;
-  max-width: 90rem;
-}
-
-.info{
-  width: 50%;
-}
-
-.info .description{
-  margin-top: 1.5rem;
-}
-
-.info .action{
-  margin-top: 3rem;
-  float: left;
-}
-
-.section-title{
-  width: 80%;
-}
-
-.decoration-image{
-  width: 40%;
-  background-size: cover;
-}
-
-.features-list{
-  margin-top: 2rem;
-}
-
-.features-list li:not(:first-child){
-  margin-top: 1rem;
-}
-
-.btn{
-  background-color: red;
-  border-radius: 5rem;
-  color: #fff;
-  text-decoration: none;
-  cursor: pointer;
-  padding: .5rem 1rem;
 }
 
 
@@ -225,4 +250,8 @@ body{
 
 .float-right{
   float:right;
+}
+
+.relative-container{
+  position: relative;
 }
