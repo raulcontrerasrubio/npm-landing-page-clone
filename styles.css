@@ -65,7 +65,7 @@ body{
   color: #fff;
   text-decoration: none;
   cursor: pointer;
-  padding: .5rem 1rem;
+  padding: .5rem 2rem;
 }
 
 .learn-more{
@@ -238,6 +238,67 @@ body{
   background-color: rgb(49, 68, 88);
 }
 
+/*
+  FEATURES
+*/
+#features{
+  background-color: #fff;
+  min-height: 45rem;
+}
+
+#features .features{
+  padding-bottom: 3rem;
+}
+
+#features a{
+  color: rgb(208, 74, 73);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#features .box{
+  margin-top: 3rem;
+}
+
+#features .box img{
+  display: block;
+  margin: 0 auto;
+  width: 33%;
+}
+
+#features .description{
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+
+#features .description h2{
+  padding: 1.5rem 0;
+  color: rgb(83, 88, 98);
+}
+
+#features .description p{
+  color: rgb(135, 145, 156);
+}
+
+#features .box{
+  width: 33%;
+  float: left;
+}
+
+#features .box h3{
+  color: rgb(83, 88, 98);
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#features .box p{
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
 
 /* UTILITIES */
 .clearfix{
@@ -250,8 +311,4 @@ body{
 
 .float-right{
   float:right;
-}
-
-.relative-container{
-  position: relative;
 }
