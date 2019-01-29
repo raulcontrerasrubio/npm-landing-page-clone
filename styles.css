@@ -17,6 +17,18 @@ body{
   font-weight: 400;
 }
 
+a, 
+a:link,
+a:visited{
+  color: #eee;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+  transition: all 600ms;
+}
+
 /*
   SECTION
 */
@@ -72,15 +84,24 @@ body{
   padding: .5rem 2rem;
 }
 
+.btn:hover{
+  color: #eee;
+  transform: scale(1.05);
+  text-decoration: none;
+  box-shadow: .2rem .2rem .3rem #333;
+  transition: all 300ms;
+}
+
+.btn:active{
+  transform: scale(.95);
+  box-shadow: 0 0 0 #111;
+  transition: 300ms;
+}
+
 .learn-more{
   color: #FFF;
   display: block;
   margin-top: 1rem;
-}
-
-.learn-more a{
-  text-decoration: none;
-  color: inherit;
 }
 
 /*
@@ -127,6 +148,12 @@ body{
   cursor: pointer;
   line-height: 2;
   font-size: 1.5rem;
+}
+
+.nav-link:hover{
+  color: rgba(255, 255, 255, 1);
+  transition: all 400ms;
+  text-decoration: none;
 }
 
 /*
@@ -176,6 +203,13 @@ body{
   cursor: pointer;
 }
 
+.search-box input[type="submit"]:hover,
+.search-box input[type="submit"]:active{
+  color: #eee;
+  background-color: rgb(51, 102, 130);
+  transition: all 400ms;
+}
+
 .auth{
   float: right;
 }
@@ -186,18 +220,12 @@ body{
   margin-top: 1rem;
 }
 
-.auth a{
-  text-decoration: none;
-  color: #ccc;
-}
-
 .auth .logo{
   float: right;
 }
 
 .btn-header{
   background-color: rgb(240, 146, 51);
-  color: white;
 }
 
 /*
@@ -216,10 +244,9 @@ body{
   WHAT IS NPM
 */
 #whatisnpm{
-  /* min-height: 30rem; */
   background: #098ace;
   background-image: url(images/red-car.png);
-  background-image: url(images/red-car.png), linear-gradient(to bottom, #33495f 0%, #33495f 58.5%, #098ace 58.5%, #098ace 100%);
+  background-image: url(images/red-car.png), linear-gradient(to bottom, #33495f 0%, #33495f 58.45%, #098ace 58.45%, #098ace 100%);
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
@@ -256,7 +283,6 @@ body{
 
 #features a{
   color: rgb(208, 74, 73);
-  text-decoration: none;
   font-weight: bold;
 }
 
