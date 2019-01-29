@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
 *{
   margin: 0;
   padding: 0;
@@ -11,6 +13,8 @@ html{
 body{
   box-sizing: border-box;
   font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
 }
 
 /*
@@ -85,21 +89,20 @@ body{
 
 .navbar{
   background-color: #C40000;
-  color: #fff;
-}
-
-.brand{
-  float: left;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .navbar .brand{
+  float: left;
+  font-size: 1.35rem;
   margin-left: 1rem;
 }
 
 .brand .icon{
-  font-size: 2rem;
-  padding: 0 1rem;
+  font-size: 1.6rem;
+  padding: 0 0rem;
   line-height: 1.5;
+  margin-left: .5rem;
 }
 
 .brand .acronym{
@@ -119,10 +122,11 @@ body{
 }
 
 .nav-link{
-  color: #fff;
+  color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   cursor: pointer;
   line-height: 2;
+  font-size: 1.5rem;
 }
 
 /*
