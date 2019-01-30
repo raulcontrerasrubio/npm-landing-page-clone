@@ -203,31 +203,38 @@ h3{
 .search-box input[type="text"]{
   margin-top: .5rem;
   margin-right: 0;
-  padding: .5rem 0 .5rem 1rem;
+  padding: .5rem 1rem;
   background-color: rgb(31, 82, 111);
   border: 1px solid #666;
   color: #CCC;
   width: 90%;
+  float: left;
 }
 
 .search-box input[type="text"]::placeholder{
   color: #CCC;
 }
 
-.search-box input[type="submit"]{
+.search-box button[type="submit"]{
   margin-left: 0;
+  margin-top: .5rem;
   border: 1px solid #666;
   padding: .5rem;
   color: #CCC;
   background-color: rgb(31, 82, 111);
   cursor: pointer;
+  float: left;
 }
 
-.search-box input[type="submit"]:hover,
-.search-box input[type="submit"]:active{
+.search-box button[type="submit"]:hover,
+.search-box button[type="submit"]:active{
   color: #eee;
   background-color: rgb(51, 102, 130);
   transition: all 400ms;
+}
+
+.search-box button img{
+  height: 1rem;
 }
 
 .auth{
