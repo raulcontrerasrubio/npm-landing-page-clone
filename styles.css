@@ -170,13 +170,14 @@ a:hover{
 }
 
 .logo{
+  display: inline-block;
   float: left;
   max-height: 4rem;
   padding: .5rem 1rem;
 }
 
 .search-box{
-  max-width: 80%;
+  width: 80%;
   float: left;
 }
 
@@ -187,7 +188,7 @@ a:hover{
   background-color: rgb(31, 82, 111);
   border: 1px solid #666;
   color: #CCC;
-  max-width: 100%;
+  width: 90%;
 }
 
 .search-box input[type="text"]::placeholder{
@@ -211,7 +212,7 @@ a:hover{
 }
 
 .auth{
-  float: right;
+  float: left;
 }
 
 .auth .actions{
