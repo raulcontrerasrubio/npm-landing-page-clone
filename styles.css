@@ -91,7 +91,7 @@ h3{
 }
 
 .btn{
-  background-color: red;
+  background-color: darkred;
   border-radius: 5rem;
   color: #fff;
   text-decoration: none;
@@ -126,12 +126,14 @@ h3{
 .navbar{
   background-color: #C40000;
   color: rgba(255, 255, 255, 0.8);
+  padding: .25rem 0;
 }
 
 .navbar .brand{
   float: left;
   font-size: 1.35rem;
   margin-left: 1rem;
+  padding-top: .25rem;
 }
 
 .brand .icon{
