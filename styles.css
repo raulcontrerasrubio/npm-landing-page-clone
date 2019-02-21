@@ -17,8 +17,7 @@ body{
   font-weight: 400;
 }
 
-a, 
-a:link,
+a,
 a:visited{
   color: #eee;
   text-decoration: none;
@@ -55,13 +54,17 @@ h3{
 }
 
 .content{
-  display: block;
+  display: flex;
+  justify-content: space-between;
   margin: 0 auto;
   max-width: 90rem;
 }
 
 .info{
   width: 50%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
 }
 
 .info .description{
@@ -70,7 +73,7 @@ h3{
 
 .info .action{
   margin-top: 3rem;
-  float: left;
+  align-self: flex-start;
 }
 
 .section-title{
@@ -87,6 +90,12 @@ h3{
 }
 
 .features-list li:not(:first-child){
+  margin-top: 1rem;
+}
+
+.learn-more{
+  color: #FFF;
+  display: block;
   margin-top: 1rem;
 }
 
@@ -113,11 +122,6 @@ h3{
   transition: 300ms;
 }
 
-.learn-more{
-  color: #FFF;
-  display: block;
-  margin-top: 1rem;
-}
 
 /*
   NAVBAR
@@ -127,10 +131,11 @@ h3{
   background-color: #C40000;
   color: rgba(255, 255, 255, 0.8);
   padding: .25rem 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .navbar .brand{
-  float: left;
   font-size: 1.35rem;
   margin-left: 1rem;
   padding-top: .25rem;
@@ -149,7 +154,6 @@ h3{
 }
 
 .nav{
-  float: right;
   margin-right: .5rem;
 }
 
@@ -177,27 +181,36 @@ h3{
   HEADER
 */
 
-#header{
+.header{
   background-color: rgb(32, 101, 136);
   background-image: url(images/city-scape.svg);
+  background-size: contain;
+  background-position: right;
   color: white;
-  padding-bottom: 10rem;
+  width: 100%;
 }
 
 .top-nav{
+  display:flex;
+  justify-content: flex-start;
+  align-items: flex-start;
   background-color: rgb(31, 82, 111);
 }
 
-.logo{
-  float: left;
+.top-nav .logo{
+
+}
+
+.top-nav .logo img{
   max-height: 4rem;
   padding: .5rem 1rem;
 }
 
 .search-box{
-  min-width: 30%;
-  width: 80%;
-  float: left;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  margin-right: 1rem;
 }
 
 .search-box input[type="text"]{
@@ -208,7 +221,8 @@ h3{
   border: 1px solid #666;
   color: #CCC;
   width: 90%;
-  float: left;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
 .search-box input[type="text"]::placeholder{
@@ -223,7 +237,6 @@ h3{
   color: #CCC;
   background-color: rgb(31, 82, 111);
   cursor: pointer;
-  float: left;
 }
 
 .search-box button[type="submit"]:hover,
@@ -238,17 +251,23 @@ h3{
 }
 
 .auth{
-  float: left;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
 }
 
 .auth .actions{
   color: #ccc;
-  display: inline-block;
   margin-top: 1rem;
+  margin-right: .5rem;
 }
 
 .auth .logo{
-  float: right;
+  /* flex-grow: 1; */
+}
+
+.auth .logo img{
+  height: 100%;
 }
 
 .btn-header{
@@ -258,9 +277,13 @@ h3{
 /*
   COLLABORATION
 */
-#collaboration{
+.collaboration-section{
   background-color: rgb(39, 53, 71);
   color: white;
+}
+
+.collaboration-section .info{
+  float: right;
 }
 
 .btn-collaboration{
@@ -270,7 +293,7 @@ h3{
 /*
   WHAT IS NPM
 */
-#whatisnpm{
+.whatisnpm-section{
   background: #098ace;
   background-image: url(images/forklift.svg);
   background-size: contain;
@@ -279,12 +302,12 @@ h3{
   color: #FFF;
 }
 
-#whatisnpm .content{
+.whatisnpm-section .content{
   position: relative;
   min-height: 30rem;
 }
 
-#whatisnpm .content > .info{
+.whatisnpm-section .content > .info{
   position: absolute;
   left: 0;
   top: 50%;
@@ -298,57 +321,57 @@ h3{
 /*
   FEATURES
 */
-#features{
+.features-section{
   background-color: #fff;
   min-height: 45rem;
 }
 
-#features .features{
+.features-section .features{
   padding-bottom: 3rem;
 }
 
-#features a{
+.features-section a{
   color: rgb(208, 74, 73);
   font-weight: bold;
 }
 
-#features .box{
+.features-section .box{
   margin-top: 3rem;
 }
 
-#features .box img{
+.features-section .box img{
   display: block;
   margin: 0 auto;
   width: 33%;
 }
 
-#features .description{
+.features-section .description{
   margin: 0 auto;
   width: 80%;
   text-align: center;
 }
 
-#features .description h2{
+.features-section .description h2{
   padding: 1.5rem 0;
   color: rgb(83, 88, 98);
 }
 
-#features .description p{
+.features-section .description p{
   color: rgb(135, 145, 156);
 }
 
-#features .box{
+.features-section .box{
   width: 33%;
   float: left;
 }
 
-#features .box h3{
+.features-section .box h3{
   color: rgb(83, 88, 98);
   text-align: center;
   margin-top: 2rem;
 }
 
-#features .box p{
+.features-section .box p{
   width: 75%;
   margin: 0 auto;
   margin-top: 1.5rem;
@@ -367,4 +390,41 @@ h3{
 
 .float-right{
   float:right;
+}
+
+@media only screen and (max-width: 1000px){
+  .header{
+    background-size: 100%;
+  }
+}
+
+@media only screen and (max-width: 700px){
+  .navbar{
+    justify-content: center;
+  }
+  
+  .navbar .brand{
+    display: none;
+  }
+
+  .top-nav .search-box{
+    margin-right: 0;
+  }
+
+  .top-nav .auth{
+    padding-right: .5rem;
+    padding-left: .5rem;
+  }
+
+  .top-nav .auth .logo{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .top-nav{
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 1rem;
+  }
 }
