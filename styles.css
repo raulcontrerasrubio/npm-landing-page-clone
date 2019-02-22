@@ -43,10 +43,7 @@ h3{
   list-style-type: none;
 }
 
-.container{
-  max-width: 90rem;
-  margin: 0 auto;
-}
+
 
 .section{
   display: flex;
@@ -334,8 +331,9 @@ h3{
   .header_logo{
     max-height: 2rem; 
     max-width: 8rem;
-    align-self: center;
+    align-self: flex-start;
     flex-grow: 0;
+    padding-top: .5rem;
   }
 
   .header_logo img{
@@ -396,11 +394,9 @@ h3{
 
   .header{
     background-image: url(images/city-scape.svg);
-    background-position: right;
+    background-position: center;
     background-size: contain;
     padding-bottom: 12.5rem;
-    display: flex;
-    justify-content: center;
   }
 
   header.section{
@@ -409,6 +405,11 @@ h3{
 
   .header_topnav{
     margin-top: 0rem;
+  }
+
+  .header_auth{
+    justify-content: flex-end;
+    margin-right: 2rem;
   }
 
   .header_content{
@@ -464,7 +465,15 @@ h3{
 }
 
 @media screen and (min-width: 1010px){
-  .header_content{
-    
+  .header{
+    background-size: cover;
   }
+
+  .header_content{
+    display: block;
+    background-color: transparent;
+    width: 40%;
+    margin-left: 15%;
+  }
+
 }
