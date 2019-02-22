@@ -366,6 +366,12 @@ h3{
   
 }
 
+@media screen and (min-width: 520px){
+  .header_auth{
+    flex-grow: 0;
+  }
+}
+
 @media screen and (min-width: 768px){
   .nav{
     flex-direction: row;
