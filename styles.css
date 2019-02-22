@@ -451,6 +451,10 @@ h3{
     align-self: flex-start;
   }
 
+  .collaboration_action small{
+    padding-left: 0;
+  }
+
   .collaboration_action > a{
     margin-left: 0;
   }
@@ -496,6 +500,11 @@ h3{
     width: 40%;
     margin-left: 15%;
   }
+
+  .collaboration_image{
+    max-width: 40rem;
+    margin-left: 10rem;
+  }
   
   .collaboration_text > h2{
     width: 80%;
@@ -510,7 +519,7 @@ h3{
   }
   
   .whatisnpm_content{
-    width: 45%;
+    width: 55%;
     padding-right: 30%;
   }
 
