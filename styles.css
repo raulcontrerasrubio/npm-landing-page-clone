@@ -23,10 +23,6 @@ a:visited{
   text-decoration: none;
 }
 
-a:hover{
-  text-decoration: underline;
-}
-
 h1, h2, h3{
   font-weight: 100;
 }
@@ -43,372 +39,84 @@ h3{
   font-weight: 700;
 }
 
-/*
-  SECTION
-*/
-
-.section{
-  display: block;
-  width: 100%;
-  padding: 3rem 0;
-}
-
-.content{
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  max-width: 90rem;
-}
-
-.info{
-  width: 50%;
-  height: 80%;
+.nav{
+  background-color: darkred;
   display: flex;
   flex-direction: column;
-}
-
-.info .description{
-  margin-top: 1.5rem;
-}
-
-.info .action{
-  margin-top: 3rem;
-  align-self: flex-start;
-}
-
-.section-title{
-  width: 80%;
-}
-
-.decoration-image{
-  width: 40%;
-  background-size: cover;
-}
-
-.features-list{
-  margin-top: 2rem;
-}
-
-.features-list li:not(:first-child){
-  margin-top: 1rem;
-}
-
-.learn-more{
-  color: #FFF;
-  display: block;
-  margin-top: 1rem;
-}
-
-.btn{
-  background-color: darkred;
-  border-radius: 5rem;
-  color: #fff;
-  text-decoration: none;
-  cursor: pointer;
-  padding: .5rem 2rem;
-}
-
-.btn:hover{
-  color: #eee;
-  transform: scale(1.05);
-  text-decoration: none;
-  box-shadow: .2rem .2rem .3rem #333;
-  transition: all 300ms;
-}
-
-.btn:active{
-  transform: scale(.95);
-  box-shadow: 0 0 0 #111;
-  transition: 300ms;
-}
-
-
-/*
-  NAVBAR
-*/
-
-.navbar{
-  background-color: #C40000;
-  color: rgba(255, 255, 255, 0.8);
-  padding: .25rem 0;
-  display: flex;
-  justify-content: space-between;
-}
-
-.navbar .brand{
-  font-size: 1.35rem;
-  margin-left: 1rem;
-  padding-top: .25rem;
-}
-
-.brand .icon{
-  font-size: 1.6rem;
-  padding: 0 0rem;
-  line-height: 1.5;
-  margin-left: .5rem;
-}
-
-.brand .acronym{
-  line-height: 2;
-  margin-left: 1rem;
-}
-
-.nav{
-  margin-right: .5rem;
-}
-
-.nav .nav-item{
-  list-style: none;
-  float: left;
-  padding: 0 1rem;
-}
-
-.nav-link{
-  color: rgba(255, 255, 255, 0.8);
-  text-decoration: none;
-  cursor: pointer;
-  line-height: 2;
-  font-size: 1.5rem;
-}
-
-.nav-link:hover{
-  color: rgba(255, 255, 255, 1);
-  transition: all 400ms;
-  text-decoration: none;
-}
-
-/*
-  HEADER
-*/
-
-.header{
-  background-color: rgb(32, 101, 136);
-  background-image: url(images/city-scape.svg);
-  background-size: auto 100%;
-  /* background-position: center; */
-  background-repeat: repeat-x;
-  color: white;
-  width: 100%;
-}
-
-#build .responsive-bg-img{
-  display: none;
-}
-
-.top-nav{
-  display:flex;
-  justify-content: flex-start;
-  align-items: center;
-  /* background-color: rgb(31, 82, 111); */
-  height: 7rem;
-  padding-bottom: 1rem;
-}
-
-.top-nav .logo{
-  height: 80%;
-  display: flex;
   justify-content: center;
 }
 
-.top-nav .logo img{
-  /* max-height: 5rem; */
-  height: 80%;
-  width: auto;
-  margin: 1.5rem 1rem 1.5rem 1.5rem;
-  /* padding: .5rem 1rem; */
-}
-
-.search-box{
-  display: flex;
-  flex-wrap: nowrap;
-  flex-grow: 1;
-  margin-right: 1rem;
-  height: 70%;
-  margin-top: 1rem;
-}
-
-.search-box input[type="text"]{
-  margin-top: .5rem;
-  margin-right: 0;
-  padding: .5rem 1rem;
-  background-color: rgb(31, 82, 111);
-  border: 1px solid #666;
-  color: #CCC;
-  width: 90%;
-  flex-grow: 1;
-  flex-shrink: 1;
-}
-
-.search-box input[type="text"]::placeholder{
-  color: #CCC;
-}
-
-.search-box button[type="submit"]{
-  margin-left: 0;
-  margin-top: .5rem;
-  border: 1px solid #666;
-  padding: .5rem;
-  color: #CCC;
-  background-color: rgb(31, 82, 111);
-  cursor: pointer;
-}
-
-.search-box button[type="submit"]:hover,
-.search-box button[type="submit"]:active{
-  color: #eee;
-  background-color: rgb(51, 102, 130);
-  transition: all 400ms;
-}
-
-.search-box button img{
-  height: 100%;
-  padding: .5rem;
-}
-
-.auth{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: nowrap;
-  height: 80%;
-}
-
-.auth .actions{
-  color: #ccc;
-  margin-top: 1rem;
-  margin-right: .5rem;
-}
-
-.auth .logo{
-  display: flex;
-  align-items: center;
-  margin-top: 1rem;
-}
-
-.auth .logo img{
-  height: 80%;
-}
-
-.btn-header{
-  background-color: rgb(240, 146, 51);
-}
-
-/*
-  COLLABORATION
-*/
-.collaboration-section{
-  background-color: rgb(39, 53, 71);
+.nav_slogan{
   color: white;
+  text-align: center;
+  padding: .5rem 0;
 }
 
-.collaboration-section .info{
-  float: right;
+/**/
+
+.nav_navigation-item{
+  
 }
 
-.btn-collaboration{
-  background-color: rgb(203, 56, 55);
+.nav_navigation-item:hover{
+  background-color: red;
 }
 
-/*
-  WHAT IS NPM
-*/
-.whatisnpm-section{
-  background: #098ace;
-  background-image: url(images/forklift.svg);
-  background-size: contain;
-  background-position: right;
-  background-repeat: no-repeat;
-  color: #FFF;
+.nav_navigation-link{
+  display: block;
+  text-align: center;
+  padding: 1rem 0;
 }
 
-.whatisnpm-section .content{
-  position: relative;
-  min-height: 30rem;
-}
-
-.whatisnpm-section .content > .info{
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.btn-whatisnpm{
-  background-color: rgb(49, 68, 88);
-}
-
-/*
-  FEATURES
-*/
-.features-section{
+.header{
   display: flex;
   flex-direction: column;
-  background-color: #fff;
-  min-height: 45rem;
+  background-color: darkblue;
 }
 
-.features-section .features{
-  padding-bottom: 3rem;
+.header_topnav{
+  padding-top: 1rem;
 }
 
-.features-section a{
-  color: rgb(208, 74, 73);
-  font-weight: bold;
+.header_topnav-logo{
+  text-align: center;
 }
 
-.features-section .box{
-  margin-top: 3rem;
-}
-
-.features-section .box img{
-  display: block;
-  margin: 0 auto;
-  width: 33%;
-}
-
-.features-section .description{
-  margin: 0 auto;
+.header_topnav-logo img{
   width: 80%;
+}
+
+.header_search{
+  display: flex;
+  flex-direction: row;
+  max-height: 5rem;
+  padding: .5rem 1rem;
+  min-height: 5rem;
+}
+
+.header_search-box{
+  flex-grow: 1;
+  color: grey;
+  background-color: blue;
+  border: none;
+}
+
+.header_search-box[placeholder]{
+  padding-left: .5rem;
+}
+
+.header_search-button{
+  max-height: 5rem;
+  width: 5rem;
+  padding: .25rem;
   text-align: center;
+  outline: none;
 }
 
-.features-section .description h2{
-  padding: 1.5rem 0;
-  color: rgb(83, 88, 98);
+.header_search-button:active{
+  background-color: red;
 }
 
-.features-section .description p{
-  color: rgb(135, 145, 156);
-}
-
-.features-section .box{
-  width: 33%;
-  float: left;
-}
-
-.features-section .box h3{
-  color: rgb(83, 88, 98);
-  text-align: center;
-  margin-top: 2rem;
-}
-
-.features-section .box p{
-  width: 75%;
-  margin: 0 auto;
-  margin-top: 1.5rem;
-  text-align: center;
-}
-
-
-/* UTILITIES */
-.clearfix{
-  clear:both;
-}
-
-.float-left{
-  float: left;
-}
-
-.float-right{
-  float:right;
+.header_search-button i{
+  color: white;
 }
