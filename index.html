@@ -5,107 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>npm</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css" />
+    <script>
+      
+    </script>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="brand">
-        <span class="icon">&hearts;</span>
-        <span class="acronym">Navel Pondering Mantra</span>
+    <nav class="nav">
+      <div class="nav_slogan">
+        &hearts; Navel Pondering Mantra
       </div>
-      <div class="nav">
-        <ul>
-          <li class="nav-item">
-            <a href="#" class="nav-link">npm Enterprise</a>
-          </li>
-          <li class="nav-item"><a href="#" class="nav-link">features</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">pricing</a></li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">documentation</a>
-          </li>
-          <li class="nav-item"><a href="#" class="nav-link">support</a></li>
-        </ul>
-      </div>
-      <div class="clearfix"></div>
+      <ul class="nav_navigation">
+        <li class="nav_navigation-item">
+          <a href="#" class="nav_navigation-link">npm Enterprise</a>
+        </li>
+        <li class="nav_navigation-item">
+          <a href="#" class="nav_navigation-link">features</a>
+        </li>
+        <li class="nav_navigation-item">
+          <a href="#" class="nav_navigation-link">pricing</a>
+        </li>
+        <li class="nav_navigation-item">
+          <a href="#" class="nav_navigation-link">documentation</a>
+        </li>
+        <li class="nav_navigation-item">
+          <a href="#" class="nav_navigation-link">support</a>
+        </li>
+      </ul>
     </nav>
-    <header class="header" id="header">
-      <div class="top-nav">
-        <a href="index.html"><img src="images/npm-logo.png" alt="npm logo" class="logo" /></a>
-        <form class="search-box">
-          <input type="text" placeholder="find packages"/>
-          <button type="submit"><img src="images/search.svg" alt="Search"></button>
+    <header class="header section" id="npm">
+      <div class="header_topnav">
+        <div class="header_logo">
+          <a href="index.html">
+            <img src="images/npm-logo.png" alt="npm logo"/>
+          </a>
+        </div>
+        <form class="header_search">
+          <input type="text" placeholder="find packages" class="header_search-box"/>
+          <button type="submit" class="header_search-button">
+            <i class="fas fa-search"></i>
+          </button>
         </form>
-        <div class="auth">
-          <div class="actions">
+        <div class="header_auth">
+          <div class="header_auth-links">
             <a href="#">sign up</a> or <a href="#">log in</a>
           </div>
-          <img src="images/bear-logo.png" alt="" class="logo" />
-        </div>
-        <div class="clearfix"></div>
-      </div>
-      <div class="content section">
-        <div class="info">
-          <h1>Build amazing things</h1>
-          <div class="description">
-            <p>
-              npm is the package manager for JavaScript and the world’s largest
-              software registry. Discover packages of reusable code &mdash; and
-              assemble them in powerful new ways
-            </p>
+          <div class="header_auth-decoration">
+            <img src="images/bear-logo.png" alt="" />
           </div>
-          <a href="#" class="btn btn-header action">Sign up for npm</a>
+        </div>
+      </div>
+      <div class="header_content">
+        <div class="header_content-text">
+          <h1>Build amazing things</h1>
+          <p>
+            npm is the package manager for JavaScript and the world’s largest
+            software registry. Discover packages of reusable code &mdash; and
+            assemble them in powerful new ways
+          </p>
+          <a href="#" class="btn btn--header header_content-action">Sign up for npm</a>
         </div>
       </div>
     </header>
-    <section class="section" id="collaboration">
-      <div class="content">
-        <img
-          src="images/collaboration.svg"
-          alt="collaborate with npm"
-          class="decoration-image float-left"
-        />
-        <div class="info float-right">
-          <h2 class="section-title">
-            npm Orgs is powerful collaboration &mdash; for free
-          </h2>
-          <ul class="features-list">
-            <li>Encourage code discovery and re-use within teams</li>
-            <li>Publish and control access to your own namespace</li>
-            <li>Manage public and private code with the same workflow</li>
-          </ul>
-          <div class="action">
-            <a href="#" class="btn btn-collaboration">Sign up for Orgs</a>
-            <small class="learn-more"
-              >or, <a href="#">Learn more about Orgs</a></small
-            >
-          </div>
+    <section class="section collaboration" id="collaboration">
+        <div class="collaboration_image">
+          <img
+            src="images/collaboration.svg"
+            alt="collaborate with npm"
+          />
         </div>
+        <div class="collaboration_box">
+          <div class="collaboration_text">
+            <h2>
+              npm Orgs is powerful collaboration &mdash; for free
+            </h2>
+            <ul>
+              <li>Encourage code discovery and re-use within teams</li>
+              <li>Publish and control access to your own namespace</li>
+              <li>Manage public and private code with the same workflow</li>
+            </ul>
+          </div>
+          <div class="collaboration_action">
+            <a href="#" class="btn btn--collaboration">Sign up for Orgs</a>
+            <small>or, 
+              <a href="#">Learn more about Orgs</a>
+            </small>
+          </div>
       </div>
-      <div class="clearfix"></div>
     </section>
-    <section class="section" id="whatisnpm">
-      <div class="content">
-        <div class="info">
-          <h2 class="section-title">What is npm?</h2>
-          <p class="description">
+    <section class="section whatisnpm" id="whatisnpm">
+        <div class="whatisnpm_content">
+          <h2>What is npm?</h2>
+          <p>
             Use npm to install, share, and distribute code; manage dependencies
             in your projects; and share & receive feedback with others.
           </p>
-          <a href="#" class="btn btn-whatisnpm action">Install npm</a>
+          <a href="#" class="btn btn--whatisnpm">Install npm</a>
         </div>
-      </div>
     </section>
-    <section class="section" id="features">
-      <div class="content">
-        <div class="description">
-          <h2>What can you make with 425,000 building blocks?</h2>
-          <p>
-            The npm registry hosts almost half a million packages for free,
-            reusable code &mdash; the largest software registry in the world.
-          </p>
+    <section class="section features" id="features">
+        <div class="features_info">
+            <h2>What can you make with 425,000 building blocks?</h2>
+            <p>
+              The npm registry hosts almost half a million packages for free,
+              reusable code &mdash; the largest software registry in the world.
+            </p>
         </div>
-        <div class="features">
-          <div class="box">
+        <div class="features_block">
+          <div class="features_block-item">
             <img src="images/binoculars.svg" alt="Find" />
             <h3>Find</h3>
             <p>
@@ -114,7 +122,7 @@
               from frameworks such as <a href="#">Ember</a>.
             </p>
           </div>
-          <div class="box">
+          <div class="features_block-item">
             <img src="images/mountain-flag.svg" alt="Discover" />
             <h3>Discover</h3>
             <p>
@@ -122,7 +130,7 @@
               everything you need to start building amazing things.
             </p>
           </div>
-          <div class="box">
+          <div class="features_block-item">
             <img src="images/backpack.svg" alt="Build" />
             <h3>Build</h3>
             <p>
@@ -130,9 +138,7 @@
               new projects.
             </p>
           </div>
-          <div class="clearfix"></div>
         </div>
-      </div>
     </section>
   </body>
 </html>
